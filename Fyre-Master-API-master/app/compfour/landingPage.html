@@ -1,0 +1,18 @@
+<div class="landingWrapper">
+    <div class="landingBox">
+        <div class="landingHeader">
+            <p class="locationText">Fyremaster</p>
+            <i class="fas fa-fire"></i>
+        </div>
+        <select class="landingDrop" ng-model="$ctrl.location">
+            <option value="" disabled selected>Select Your City</option>
+            <option value="detroit">Detroit</option>
+            <option value="new york city">New York City</option>
+            <option value="los angeles">Los Angeles</option>
+            <option value="chicago">Chicago</option>
+            <option value="las vegas">Las Vegas</option>
+        </select>
+        <button ng-disabled="!$ctrl.location" class="igniteYourNight"
+            ng-click="$ctrl.sendCity($ctrl.location) && $ctrl.search($ctrl.event)">IGNITE YOUR NITE!</button>
+    </div>
+</div>

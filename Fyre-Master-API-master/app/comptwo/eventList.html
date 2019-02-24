@@ -1,0 +1,23 @@
+<section class="searchResultsContainer">
+
+  <div class="searchResults" ng-repeat="post in $ctrl.posts | orderBy: $ctrl.filterKey">
+
+    <div ng-click="$ctrl.addFavorite({post});" class="btn-add">
+      <i class="fas fa-heart heart" red></i>
+    </div>
+
+    <div>
+      <img class="img" src="{{post.images[9].url}}">
+    </div>
+    <p>{{post.name}}</p>
+    <div class="imageInfo" show>
+      <a class="moreInfo" href="{{post.url}}" class="button" target=”_blank”>More Info</a>
+      <p ng-hide="!post.priceRanges[0].min"><span class="color">Price: </span>{{post.priceRanges[0].min | currency}} - {{post.priceRanges[0].max | currency}} </p>
+      <p ng-if="!post.priceRanges[0].min">No pricing available</p>
+      <p><span class="color">Event: </span>{{post._embedded.venues['0'].address.line1}}</p>
+      <!-- <p>State: {{post._embedded.venues['0'].state.name}}</p> -->
+      <p><span class="color">Date: </span>{{post.dates.start.localDate}}</p>
+    </div>
+
+  </div>
+</section>

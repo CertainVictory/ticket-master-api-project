@@ -1,0 +1,14 @@
+<nav-bar></nav-bar>
+
+<form ng-submit="$ctrl.search($ctrl.event)" class="searchContainer">
+    <input class="searchInput" type="text" placeholder="Search For Fyre" ng-model="$ctrl.event">
+</form>
+<div class="filterContainer">
+  <button ng-click="$ctrl.filterByPrice()">Price</button>
+  <button ng-click="$ctrl.filterByDate()">Date</button>
+</div>
+
+<event-list
+  posts="$ctrl.posts"
+  filter-key="$ctrl.filter"
+></event-list>

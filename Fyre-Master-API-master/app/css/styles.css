@@ -1,0 +1,230 @@
+body, html {
+  margin: 0 auto;
+  font-family: 'Julius Sans One', sans-serif;
+  background-image: linear-gradient(to right, #f46b45 , #eea849);
+}
+
+button {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 0 10px rgba(0,0,0,0.6);
+  transition: all .2s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 0 10px#fda50f;
+  transform: scale(1.025);
+}
+ 
+input {
+  outline: none;
+  border-radius: 5px;
+}
+
+select {
+  border-radius: 5px;
+  min-width: 196px;
+}
+
+nav {
+  display: flex;
+  background-color:white;
+  padding: 20px 10px 20px 10px;
+  font-size: 28px;
+}
+
+.bucketListNav {
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.title {
+  display: flex;
+  flex: 1;
+  font-family: 'Syncopate', sans-serif;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -15px 10px 0 10px;
+}
+
+.searchInput {
+  width: 900px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  transition: all .2s ease-in-out;
+  font-size: 18px;
+}
+
+.searchInput:hover {
+  transform: scale(1.025);
+  box-shadow: 0 0 10px#fda50f;
+}
+
+.filterContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.filterContainer * {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.searchResultsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.searchResults {
+  position: relative;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  text-align: center;
+  transition: all .2s ease-in-out;
+  background-color: white;
+}
+
+.searchResults:hover {
+  transform: scale(1.025);
+}
+
+.img {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.moreInfo {
+  background-color: white;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px 0;
+  color: black;
+  border-radius: 5px;
+  width: 450px;
+}
+
+.moreInfo:hover {
+  background-color: #fda50f;
+}
+
+.imageInfo {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 450px;
+  height: 100%;
+  background-color:black;
+  opacity: 0.85;
+  color: white;
+  border-radius: 5px;
+}
+
+.imageInfo * {
+  width: 100%;
+}
+
+.color {
+  color:#fda50f;
+}
+
+.landingWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  /* background-image: url("https://pixel.nymag.com/imgs/daily/selectall/2016/09/29/29-kanye-west-tlop.nocrop.w710.h2147483647.jpg
+  https://pixel.nymag.com/imgs/daily/selectall/2016/09/29/29-kanye-west-tlop.nocrop.w710.h2147483647.jpg
+  "); */
+  background-image: url("http://toms.co.za/durban/wp-content/uploads/2015/06/Fotolia_42900844_Subscription_Monthly_L.jpg");
+  background-size: cover;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.landingBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color:white;
+  color: black;
+  border-radius: 5px;
+  opacity: 0.75;
+  padding: 25px 40px;
+  position: relative;
+  width: 35%;
+  height: 25%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.igniteYourNight {
+background-color:#fda50f;
+color: white;
+width: auto;
+border: 0px solid;
+border-radius: 5px;
+font-size: 16px;
+padding: 10px;
+font-family: 'Syncopate', sans-serif;
+}
+
+.locationText {
+  margin: 0;
+  margin-right: 5px;
+}
+
+i{
+  color: #fda50f;
+}
+
+.landingHeader {
+  display: flex;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Syncopate', sans-serif;
+}
+
+.landingDrop {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  height: 30px;
+  width: 150px;
+}
+
+.btn-add {
+  position: absolute;
+  border: 0px solid;
+  top: -25px;
+  right: -25px;
+  z-index: 10;
+}
+
+.heart {
+  font-size: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  border-radius: 50%;
+  padding: 10px;
+  background-color: white;
+}

@@ -1,0 +1,33 @@
+<nav class="bucketListNav">
+  <span class="title">
+    <p class="locationText">Fyremaster</p>
+    <i class="fas fa-fire"></i>
+  </span>
+  <i class="fas fa-home" ng-click="$ctrl.goHome()"></i>
+</nav>
+
+<section class="searchResultsContainer">
+
+  <div class="searchResults" ng-repeat="favs in $ctrl.favoriteEvents">
+      <div class="btn-add" ng-click="$ctrl.removeFavorite($index);">
+        
+          <i class="fas fa-fire-extinguisher heart"></i>
+    
+          </div>
+    <div>
+      <img class="img" src="{{favs.post.images[9].url}}">
+    </div>
+    <p>Event: {{favs.post.name}}</p>
+
+    <div class="imageInfo" show>
+      <a class="moreInfo" href="{{favs.post.url}}" class="button" target=”_blank”>More Info</a>
+      <p ng-hide="!favs.post.priceRanges[0].min"><span class="color">Price: </span>{{favs.post.priceRanges[0].min | currency}} -
+        {{favs.post.priceRanges[0].max | currency}} </p>
+      <p ng-if="!favs.post.priceRanges[0].min">No pricing available</p>
+      <p><span class="color">Address: </span>{{favs.post._embedded.venues['0'].address.line1}}</p>
+      <!-- <p>State: {{favs.post._embedded.venues['0'].state.name}}</p> -->
+      <p><span class="color">Date: </span>{{favs.post.dates.start.localDate}}</p>
+    </div>
+
+  </div>
+</section> 
